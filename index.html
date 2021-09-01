@@ -10,38 +10,145 @@
     />
     <link rel="icon" href="favicon.svg" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>asity</title>
+    <title>asity | coming soon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+        font-family: Airbnb Cereal App;
+      }
+      body {
+        background: radial-gradient(circle at top center, #1e1e3e, #0e0e1d);
+        height: 110vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+      }
+      .gif {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        top: -160px;
+        background-blend-mode: screen;
+        mix-blend-mode: color-dodge;
+      }
+      .man {
+        width: 800px;
+        height: auto;
+        position: absolute;
+        top: -408px;
+        animation: spin 100s infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .man2 {
+        width: 1400px;
+        height: auto;
+        position: absolute;
+        top: -708px;
+        animation: spin2 100s infinite;
+      }
+      @keyframes spin2 {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      .wrapper {
+        height: 56vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+      }
+      .wrapper .logo {
+        width: 12rem;
+        height: auto;
+        z-index: 1000;
+      }
+      .wrapper h1 {
+        font-size: 3.2rem;
+      }
+      .wrapper p {
+        font-size: 1.2rem;
+        opacity: 0.6;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        z-index: 1000;
+      }
+      li a {
+        color: white;
+        opacity: 0.6;
+        font-size: 1.6rem;
+        margin: 0.8rem;
+      }
+      li a:hover {
+        opacity: initial;
+      }
+      span {
+        opacity: 0.4;
+        font-size: 0.8rem;
+      }
+    </style>
   </head>
   <body>
+    <img src="glareGif.gif" alt="" class="gif" />
     <div class="container">
-      <img src="logo.svg" alt="" class="logo" />
-      <h1>We are building.</h1>
-      <p>asity will be launched soon.</p>
-      <ul>
-        <li>
-          <a href="#"><i class="uil uil-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="uil uil-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="uil uil-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="uil uil-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="uil uil-youtube"></i></a>
-        </li>
-      </ul>
-      <span>Copyright 2020-2021, asity tech. All rights reserved.</span>
-      <img src="glareGif.gif" alt="" class="glare-gif" />
-      <img src="mandala.png" alt="" class="mandala" />
-      <audio autoplay preload="auto" loop>
-        <source src="music.mp3" type="audio/mp3" />
-        Your browser does not support the audio tag.
-      </audio>
+      <img src="mandala.png" alt="" class="man" /><img
+        src="mandala2.png"
+        alt=""
+        class="man2"
+      />
+      <div class="wrapper">
+        <img src="logo.svg" alt="" class="logo" />
+        <div class="header">
+          <h1>We are building.</h1>
+          <p>asity will be launched soon.</p>
+        </div>
+        <ul>
+          <li>
+            <a href="#"><i class="uil uil-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-youtube"></i></a>
+          </li>
+        </ul>
+        <span>Copyright 2020-2021, asity tech. All rights reserved.</span>
+      </div>
     </div>
   </body>
 </html>
